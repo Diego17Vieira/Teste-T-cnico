@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Teste Técnico</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo">Cadastro de rebeldes</h1>
+      <p id="subtitulo">Complete com suas informações</p>
+    </div>
+
+    <form action="">
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Ex.: Boba"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label for="sobrenome">Sobrenome</label>
+          <input
+            type="text"
+            name="sobrenome"
+            id="sobrenome"
+            placeholder="Ex.: Fett"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="planeta">Planeta</label>
+        <input
+          type="text"
+          name="planeta"
+          id="planeta"
+          placeholder="Ex.: Kamino"
+          required
+        />
+      </div>
+
+      <div class="campo">
+        <label for="data">Data de nascimento</label>
+        <input type="date" name="data" id="data" required />
+      </div>
+
+      <div class="campo">
+        <label for="descricao"
+          >Descreva qual a sua motivação para entrar na aliança</label
+        >
+        <textarea
+          name="descricao"
+          id="descricao"
+          cols="30"
+          rows="10"
+          placeholder="Digite..."
+          required
+        ></textarea>
+      </div>
+
+      <button
+        onclick="alert('Cadastro realizado com sucesso')"
+        class="botao"
+        type="submit"
+      >
+        Enviar
+      </button>
+    </form>
+  </body>
+</html>
